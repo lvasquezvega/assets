@@ -1,0 +1,321 @@
+/* === Body === */
+
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+}
+
+
+/* === Wrapper === */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 100%;
+}
+
+#wrapper.toggled {
+    padding-left: 300px;
+}
+
+
+/* === Mini Chullo Logo === */
+
+.minichullo {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    padding: 15px;
+    border: 0px solid transparent;
+    filter: brightness(85%);
+    -ms-transform: rotateZ(0deg); /* IE 9 */
+    -webkit-transform: rotateZ(0deg); /* Chrome, Safari, Opera */
+    transform: rotateZ(0deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.minichullo img {
+    border: 3px solid #d82133;
+    border-radius: 100%;
+}
+
+#text-menu {
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    top: 20px;
+    left: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#wrapper.toggled .minichullo {
+    filter: brightness(100%);
+    -ms-transform: rotateZ(360deg); /* IE 9 */
+    -webkit-transform: rotateZ(360deg); /* Chrome, Safari, Opera */
+    transform: rotateZ(360deg);
+        -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navbar-brand {
+    display: none;
+}
+
+
+/* === Siderbar === */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 300px;
+    width: 0;
+    height: 100%;
+    margin-left: -300px;
+    overflow-y: hidden;
+    background: #f9f5f5;
+    border-color: transparent;
+    border-radius: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3), inset 0px 0px 2px 1px #fff;
+}
+
+#sidebar-wrapper .navbar-collapse {
+}
+
+#sidebar-wrapper ul {
+    float: none;
+    text-align: center;
+}
+
+#sidebar-wrapper .navbar-nav li {
+    color: #a5a5a5;
+    float: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#sidebar-wrapper .navbar-nav li a {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar-wrapper .navbar-nav li a:hover {
+    color: #BF4051;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#sidebar-wrapper .navbar-nav li a:active {
+    color: red;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 300px;
+}
+
+.ca-portrait {
+    width: 200px;
+    margin: 100px auto 30px auto;
+    border: 3px solid #000;
+    border-radius: 100%;
+    padding: 0;
+}
+
+.ca-portrait img:hover {
+    filter: brightness(90%);
+    -webkit-transition: filter 0.3s ease-in;
+    -moz-transition: filter 0.3s ease-in;
+    -o-transition: filter 0.3s ease-in;
+    transition: filter 0.3s ease-in;
+}
+
+#sidebar-wrapper hr {
+    border-top: 2px dotted black;
+    width: 162px;
+}
+
+.navbar-nav i {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.collapse li .fa {
+    position: absolute;
+    left: -25px;
+    border: 1px solid transparent;
+    padding: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.navbar-nav li {
+}
+
+.navbar-nav li a:hover > .fa {
+    border: 1px solid #BF4051;
+    border-radius: 100%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+/* === Page-Content === */
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: relative;    
+}
+#page-content-wrapper .blog {
+}
+
+#page-content-wrapper .blog img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 4;
+    background-color: #201d1d;
+    border: 1px solid #f9f5f5;
+    border-radius: 25px;
+    -webkit-transition: filter 0.3s ease-in;
+    -moz-transition: filter 0.3s ease-in;
+    -o-transition: filter 0.3s ease-in;
+    transition: filter 0.3s ease-in;   
+}
+
+.webgl.container {
+    
+}
+
+.blog {
+    float: left;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog .caption {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;   
+}
+
+.blog:hover .caption {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;   
+}
+
+.blog .caption .blur {
+    background-color: rgba(198,198,198,0.4);
+    z-index: 5;
+    position: absolute;
+    height: 176.78px;
+    width: 380px;
+    border-radius: 25px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;   
+}
+
+.caption .caption-text {
+    position: absolute;
+    margin: 0 auto;
+    height: 176.78px;
+    width: 380px;
+    text-align: center;
+    top: 50px;
+}
+
+.caption .caption-text i {
+    color: #fff;
+    font-size: 5em;
+}
+
+/* === MOBILE STYLING === */
+
+@media (max-width: 768px) {
+    #wrapper.toggled {
+        padding-left: 0px;
+    }
+    #sidebar-wrapper {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+        margin-bottom: 0;
+    }
+    #sidebar-wrapper .navbar-collapse {
+        position: relative;
+        top: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 100%;
+    }
+    #page-content-wrapper {
+        margin-right: 0;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        position: absolute;
+        margin-right: 0;
+    }
+    .minichullo {
+        display: none;
+    }
+    .navbar-brand {
+        display: inherit;
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .navbar-brand img {
+        border: 2px solid #d82133;
+        border-radius: 100%;
+    }
+    .ca-portrait {
+        display: none;
+    }
+    .navbar-nav .fa {
+        display: none;
+    }
+}
